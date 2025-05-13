@@ -16,21 +16,21 @@ A simple, real-time crypto price tracker built with Next.js, React Query, and th
 ### Prerequisites
 
 - Node.js 16.x or higher
-- npm or yarn
+- npm 
 
 ### Installation
 
-1. **Clone the repository (or create a new Next.js project)**
+1. **Clone the repository**
 
 ```bash
-npx create-next-app@latest crypto-tracker
+git clone <repositary_link>
 cd crypto-tracker
 ```
 
 2. **Install dependencies**
 
 ```bash
-npm install @tanstack/react-query axios
+npm i
 ```
 
 3. **Environment Variables Setup**
@@ -42,15 +42,8 @@ NEXT_PUBLIC_COINGECKO_API_URL=https://api.coingecko.com/api/v3
 NEXT_PUBLIC_COINGECKO_API_KEY=your_api_key_here  # Optional, only if you have one
 ```
 
-4. **Create the components and files**
 
-- Create the `types/coin.ts` file with the Coin interface
-- Create the `components/coins.tsx` file for the main component
-- Update your `app/providers.tsx` for React Query setup
-- Update your `app/layout.tsx` to include the providers
-- Create your `app/page.tsx` to render the tracker
-
-5. **Start the development server**
+4. **Start the development server**
 
 ```bash
 npm run dev
@@ -98,13 +91,6 @@ app/
    - Implemented comprehensive error states
    - Added debug information for troubleshooting
 
-## API Notes
-
-This project uses the CoinGecko API, which has rate limitations for free tier usage. If you encounter rate limiting issues, consider:
-
-1. Getting an API key from CoinGecko
-2. Reducing the refresh interval
-3. Implementing a backend proxy for API calls (to hide your key)
 
 ## Customization
 
